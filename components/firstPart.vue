@@ -1,6 +1,6 @@
 
 <template>
-    <div class="flex items-center h-full w-full">
+    <div class="flex items-center min-h-screen w-full">
         <Navbar/>
         <Desc/>
         <Terminal/>
