@@ -1,5 +1,3 @@
-
-import type { TypeWriter } from '#build/components';
 <template>
     <div>
         <h1 class="text-8xl	">Milan Herbé</h1><br>
