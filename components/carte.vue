@@ -1,7 +1,7 @@
 <template>
-    <div class="h-96 w-80 text-left bg-blue-400 rounded">
+    <div class="h-96 w-80 text-left bg-neutral-400 rounded-lg backdrop-blur-sm opacity-50">
       <h1 class="m-4">{{ carte.title }}</h1>
-      <img :src="carte.image" />
+      <img :src="carte.image" class="m-4"/>
       <p class="min-h-10 m-4">Description : {{ carte.description }}</p>
       <h3 class="m-4">Mes outils utilisés : {{ carte.outils }}</h3>
     </div>
