@@ -1,12 +1,14 @@
 <template>
     <div class="flex flex-col min-h-screen w-full">
         <Navbar/>
-        <carte/>
+        <div>
+            <Cartes :cartes="cartesData"/>
+        </div>
     </div>
 </template>
 
 <script setup lang='ts'>
 import Navbar from './langNav.vue';
-import cartesVue from './cartes.vue';
-import carte from './carte.vue'
+import Cartes from './cartes.vue';
+import cartesData from './../data/carteData';
 </script>

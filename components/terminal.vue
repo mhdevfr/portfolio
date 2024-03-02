@@ -1,6 +1,6 @@
 <template>
-<div class="w-1/2 mx-auto min-h-screen flex items-center">  
-  <div class="w-full shadow-2xl subpixel-antialiased rounded bg-black border-black mx-auto">
+<div class="w-1/2 mx-auto flex items-center">  
+  <div class="w-full shadow-2xl h-full subpixel-antialiased rounded bg-black border-black mx-auto">
     <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
                 <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
                     </div>
@@ -12,7 +12,7 @@
     <p class="text-center text-sm">Terminal</p>
      </div>
          </div>
-            <div class="pl-1 pt-1 min-h-full text-green-200 font-mono text-xs bg-black " id="console">
+            <div class="pl-1 pt-1 h-screen text-green-200 font-mono text-xs bg-black " id="console">
                 <p class="pb-1">Last changes: Friday Marsh 1 01:16:48 by Milan</p>
                 <p class="pb-5">ubuntu:portfolio mhdev$</p>
                 <p class="pb-1">Initialization...</p>
@@ -30,6 +30,10 @@
 
 </script>
 
-<style>
+<style scoped>
+
+#console{
+    height: 70vh;
+}
 
 </style>

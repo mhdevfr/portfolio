@@ -1,4 +1,4 @@
-export interface carteInterface {
+export interface CarteInterface {
     title: string;
     image: string;
     outils: string;

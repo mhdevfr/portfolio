@@ -1,11 +1,20 @@
 
 <template>
-    <div class="h-1/2">
-        <ListeCartes/>
+    <div>
+        <ListeCarte
+        :cartes="cartes"
+        />
     </div>
 </template>
 
-<script lang=ts>
-import ListeCartes from './listeCarte.vue';
+<script setup lang=ts>
+import { defineProps } from 'vue';
+import ListeCarte from './listeCarte.vue';
+import type { CarteInterface } from '~/interfaces/carte.interface';
+
+const props = defineProps<{
+    cartes: CarteInterface[]
+}>()
+
 
 </script>
