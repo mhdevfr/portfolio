@@ -1,10 +1,5 @@
 <template>
     <div class="min-h-screen min-w-full flex items-center justify-around">
-        <div class="top-0 left-0 animate-pulse absolute inset-0">
-                <div class="border-l-4 border-dashed border-red-500 absolute max-w-64 inset-0 -rotate-45 opacity-20"></div>
-                <div class="border-l-4 border-dashed border-yellow-500 m-16 absolute max-w-20 inset-0 -rotate-45 opacity-20"></div>
-                <div class="border-l-4 border-dashed border-green-500 m-8 absolute max-w-40 inset-0 -rotate-45 opacity-20"></div>
-            </div>
         <div class="min-w-96 rounded">
             <h1 class="text-3xl my-4">Ma bio :</h1>
             <p class="max-w-96 text-lg">Passionné par le potentiel infini du web, je suis un développeur web 
@@ -32,7 +27,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
