@@ -1,5 +1,18 @@
 <template>
-    <div class="min-h-screen min-w-1/2 flex items-center justify-around">
+    <div class="min-h-screen min-w-full flex items-center justify-around">
+        <div class="min-w-96 rounded ">
+            <h1 class="text-3xl my-4">Bio :</h1>
+            <p class="max-w-96" >Passionné par le potentiel infini du web, je suis un développeur web 
+                créatif et curieux. Fort d'une expérience solide dans la conception et la réalisation 
+                de sites web dynamiques, je m'efforce de créer des expériences utilisateur exceptionnelles. 
+                Ma passion pour la technologie et mon engagement envers l'innovation me motivent à relever 
+                chaque nouveau défi avec enthousiasme. Mon objectif ? Transformer des idées en réalité digitale, 
+                une ligne de code à la fois.</p>
+            <div class="flex items-center justify-end">
+                <img src="../images/icons8-github-50.png" class="w-8 h-8">
+                <img src="../images/icons8-linkedin-50 (1).png" class="w-12 h-12">
+            </div>
+        </div>
         <div class="group h-96 w-96 [perspective: 1000px]">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 <div class="absolute inset-0">
