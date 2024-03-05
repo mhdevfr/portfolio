@@ -5,7 +5,7 @@
   
 <script setup lang="ts">
   import VueWriter from 'vue-writer';
-  let message = ['développeur,','auto-ditacte,','front-end,','et étudiant...']
+  let message = ['développeur,','autodidacte,','front-end,','étudiant...']
 </script>
 
 

@@ -1,12 +1,16 @@
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col mt-16">
             <div class="flex justify-around items-center mt-10">
-                <Carte v-for="carte of cartes" :key="carte.id" :carte="carte"/>
+                <Carte 
+                v-for="carte of cartes"
+                :key="carte.id" 
+                :carte="carte"
+                :class="{ 'carteActive': carte.id === carteActiveId }"
+                />
             </div>
-            <div class="flex items-center min-w-full justify-center">
-                <button @click="changeCarte(-1)"  class="bg-slate-700 rounded-full h-3 w-3 hover:bg-gray-300"></button>
-                <button @click="changeCarte(0)" class="bg-slate-700 rounded-full h-3 w-3 my-8 mx-4 hover:bg-gray-300"></button>
-                <button @click="changeCarte(+1)" class="bg-slate-700 rounded-full h-3 w-3 hover:bg-gray-300"></button>
+            <div class="flex items-center min-w-full mt-10 justify-center">
+                <img src="../images/left.png" @click="changeCarte(-1)" class="w-12 mt-8 mr-4">
+                <img src="../images/right.png" @click="changeCarte(+1)" class="w-12 mt-8 ml-4">
             </div>
     </div>
 </template>
@@ -16,21 +20,24 @@ import Carte from './carte.vue';
 import type { CarteInterface } from '~/interfaces/carte.interface';
 import { defineProps } from 'vue';
 import carteData from '~/data/carteData';
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 
 const props = defineProps<{
     cartes: CarteInterface[];
 }>();
 
+let carteActiveId = ref(2);
 
-const changeCarte = (number: Number) => {
-    if(number === -1){
-        console.log('ceci est un test')
-    } else if(number === 0){
-        console.log('ceci est un 2nd ')
-    } else {
-        console.log('ceci est le dernier');
+
+
+const changeCarte = (number: number) => {
+    const newCarteId = carteActiveId.value + number;
+    if (newCarteId >= 1 && newCarteId <= props.cartes.length) {
+        carteActiveId.value = newCarteId;
     }
 }
+
 
 
 
@@ -50,8 +57,7 @@ const changeCarte = (number: Number) => {
 }
 
 .carteActive{
-    border: 1px solid aliceblue;
-    opacity: 1;
+    opacity: 0.75;
     scale: 1.2;
 }
 

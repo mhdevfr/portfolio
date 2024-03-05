@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen min-w-full flex items-center justify-around">
-        <div class="min-w-96 rounded">
+        <div class="min-w-96 rounded" id="bio">
             <h1 class="text-3xl my-4">Ma bio :</h1>
             <p class="max-w-96 text-lg">Passionné par le potentiel infini du web, je suis un développeur web 
                 créatif et curieux. Fort d'une expérience solide dans la conception et la réalisation 
@@ -31,7 +31,10 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+
 
 
 </script> 
