@@ -6,7 +6,8 @@
                 <div class="flex">
                     <input class="bg-transparent border-b-2 w-3/12 my-8" type="text" placeholder="Le sujet">
                     <img src="../images/icons8-github-50-2.png" class="w-10 h-10 mt-10 ml-96">
-                    <img src="../images/icons8-linkedin-50 (1).png" class="w-10 h-10 mt-10 ml-96">
+                    <img src="../images/icons8-linkedin-100.png" class="w-10 h-10 mt-10 ml-10">
+                    <img src="../images/icons8-courrier-60.png" class="w-10 h-10 mt-10 ml-10">
                 </div>
                 <input class="bg-transparent border-2 min-h-96 my-8 w-3/4" type="text" placeholder="le contenu de votre message">
             </form>
