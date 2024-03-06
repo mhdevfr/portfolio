@@ -6,9 +6,20 @@
                 :key="carte.id" 
                 :carte="carte"
                 :class="{ 'carteActive': carte.id === carteActiveId }"
+                v-motion-pop-visible
                 />
             </div>
-            <div class="flex items-center min-w-full mt-10 justify-center">
+            <div class="flex items-center min-w-full mt-10 justify-center" 
+                            v-motion
+                            :initial="{
+                                opacity: 0,
+                                y: 100,
+                            }"
+                            :visible="{
+                                opacity: 1,
+                                y: 0,
+                            }"
+                            >
                 <img src="../images/left.png" @click="changeCarte(-1)" class="w-12 mt-8 mr-4">
                 <img src="../images/right.png" @click="changeCarte(+1)" class="w-12 mt-8 ml-4">
             </div>

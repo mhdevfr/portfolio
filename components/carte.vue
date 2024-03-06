@@ -1,5 +1,5 @@
 <template>
-    <div class="h-96 w-80 text-left bg-white opacity-50 text-black rounded-lg backdrop-blur-sm blur-sm ">
+    <div class="h-96 w-80 text-left bg-white opacity-50 text-black rounded-lg backdrop-blur-sm blur-sm">
       <h1 class="m-4 text-center">{{ carte.title }}</h1>
       <img :src="carte.image" class="mx-auto opacity-100 w-5/6" id="img"/>
       <p class="min-h-10 m-4 text-sm"><h1>Description</h1> - {{ carte.description }}</p>
@@ -28,7 +28,7 @@
     opacity: 1;
     scale: 1.2;
     filter: blur(0px);
-    transition: 1s;
+    transition: 0.5s;
 }
 
   </style>

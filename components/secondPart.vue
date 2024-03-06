@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col min-h-screen w-full">
-        <Navbar/>
+        <Navbar v-motion-pop-visible/>
         <div>
             <Cartes :cartes="cartesData"/>
         </div>

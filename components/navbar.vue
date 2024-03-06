@@ -1,6 +1,6 @@
 
 <template>
-    <div class="h-5/6">
+    <div class="h-5/6" v-motion-slide-visible-left>
         <ul class="bg-slate-950 flex flex-col width 
          m-10 text-white rounded-full w-16
          text-center justify-center min-h-full 

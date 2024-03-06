@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-8xl	">Milan Herbé</h1><br>
+        <h1 class="text-8xl" v-motion-pop-visible>Milan Herbé</h1><br>
         <h1 class="text-7xl"><TypeWriter/></h1>
     </div>
 </template>
