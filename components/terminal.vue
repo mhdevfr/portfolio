@@ -24,14 +24,25 @@
     <p class="text-center text-sm">Terminal</p>
      </div>
          </div>
-            <div class="pl-1 pt-1 h-screen text-green-200 font-mono text-xs bg-black " id="console">
-                <p class="pb-1">Last changes: Friday Marsh 1 01:16:48 by Milan</p>
+            <div class="pl-1 pt-1 h-full text-green-200 font-mono text-xs bg-black" ref="terminal">
+              <div v-if="!textMe">
+                <p class="pb-1">Last changes: {{ onejan }} by Milan</p>
                 <p class="pb-5">ubuntu:portfolio mhdev$</p>
                 <p class="pb-1">Initialization...</p>
                 <p class="pb-1">Making new portfolio...</p>
                 <p class="pb-1">$//**//**//**//**//$</p>
                 <p class="pb-10">Project Vue, Nuxt, Tailwind Created</p>
                 <p class="pb-1">Ready to have a look.</p>
+              </div>
+              <div v-if="textMe">
+                <p>Salut moi c'est Milan !</p>
+              </div>
+                <div class="flex justify-center h-full items-center">
+                  <button @click="textMe" class="bg-green-400 m-8 text-black text-xl p-4 rounded-lg">
+                  <Icon name="pepicons-pop:text-bubbles" />
+                  Text me
+                </button>
+                </div>
             </div>
   </div> 
 </div>
@@ -39,13 +50,10 @@
 </template>
 
 <script setup>
-
+const textMe = ref(false);
 </script>
 
 <style scoped>
 
-#console{
-    height: 70vh;
-}
 
 </style>

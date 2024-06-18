@@ -24,7 +24,7 @@
 }
 
 .is-typed span.typed {
-  color: black;  
+  colour: black;  
 }
 .is-typed span.cursor {
   display: inline-block;

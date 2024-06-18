@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen min-w-full flex items-center justify-around">
+    <div class="min-h-screen min-w-full flex  items-center justify-around text-gray-200">
         <div class="min-w-96 rounded" id="bio">
             <h1 class="text-3xl my-4">Ma bio :</h1>
             <p class="max-w-96 text-lg"
@@ -35,8 +35,6 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
-import gsap from 'gsap';
 
 
 
