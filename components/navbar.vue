@@ -1,26 +1,22 @@
 <template>
-  <div class="h-screen flex items-center" v-motion-slide-visible-left>
-    <ul
-      class="bg-black flex flex-col width m-10 text-white rounded-full w-16 text-center justify-center h-2/3 items-center"
-    >
-      <li class="mb-10"><a href="#" class="">🏠 Accueil</a></li>
-      <li class="mb-10"><a href="#">📦 Projets</a></li>
-      <li class="mb-10"><a href="#">💻 Skills</a></li>
-      <li class="mb-10"><a href="#">📔 Bio</a></li>
-      <li class="mb-10"><a href="#" size="">🧾 F.A.Q</a></li>
-      <li class="mb-10"><a href="#">💬 Contact</a></li>
-      <a href="https://github.com/mhdevfr"
-        ><img src="./../images/icons8-github-50-2.png" width="20px"
-      /></a>
-      <li class="mb-10"><a href="#"></a></li>
-    </ul>
+  <div class="h-16 flex w-3/4 items-center rounded-xl mt-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 " v-motion-slide-visible-left>
+    <div class="flex w-full justify-around items-center ">
+      <NuxtLink to="/" class="text-white">Milan H</NuxtLink>
+      <NuxtLink to="/" class="text-white">Home</NuxtLink>
+      <NuxtLink to="/" class="text-white">Projects</NuxtLink>
+      <NuxtLink to="/" class="text-white">Bio</NuxtLink>
+      <NuxtLink to="/fifthPart" class="text-white px-8 py-2 bg-indigo-600 rounded-lg">Talk to me</NuxtLink>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
 
-<style scoped lang="scss">
-a {
-  font-size: 10px;
+
+</script>
+
+<style scoped>
+*{
+  scroll-behavior: smooth;
 }
 </style>
