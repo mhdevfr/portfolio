@@ -1,9 +1,10 @@
 
 <template>
+    <div class="relative inset-0 w-full bg-[linear-gradient(to_right,#ececec12_1px,transparent_1px),linear-gradient(to_bottom,#ececec12_1px,transparent_1px)] bg-[size:24px_24px]">  
     <div class="flex items-center min-h-screen justify-center  bg-indigo-950" id="firstMain">
-        <Navbar class="fixed top-0"/>
         <Desc class="w-1/4 h-full"/>
         <BentoComponent class="w-1/2 h-full rounded-lg" id="bento"/>
+    </div>
     </div>
 </template>
 

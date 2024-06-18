@@ -1,4 +1,5 @@
 <template>
+    <div class="relative inset-0 w-full bg-indigo-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:100px_100px]">
     <div class="min-h-screen min-w-full flex  items-center justify-around text-gray-200">
         <div class="min-w-96 rounded" id="bio">
             <h1 class="text-3xl my-4">Ma bio :</h1>
@@ -32,6 +33,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </template>
 
 <script setup>

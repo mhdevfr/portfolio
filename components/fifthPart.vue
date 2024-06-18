@@ -1,4 +1,5 @@
 <template>
+    <div class="relative inset-0 min-w-screen bg-indigo-950 overflow-x-hidden">
         <div class="min-h-screen min-w-full flex flex-col justify-center ml-40 border-gray-700">
             <h1 class="text-7xl mt-12 text-white ">Let's Talk</h1>
             <form class="flex flex-col">
@@ -13,6 +14,11 @@
                 <input type="submit" class="submit bg-white w-32 h-8 hover:bg-green-400 transition:500">
             </form>
         </div>
+        <div class="flex flex-row justify-center items-center bg-black-300 min-h-36 text-white">
+            <h2>©copyright 2023-2024 Milan Herbé </h2>
+          </div>
+    </div>
+        
 </template>
 
 <script setup lang="ts">
